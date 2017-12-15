@@ -11,3 +11,4 @@ class Mapper(MapperNetcdfCF):
         
         super(Mapper, self).__init__(filename, gdal_dataset, gdal_metadata, *args, **kwargs)
 
+        self.dataset.SetMetadataItem('aaa', 'bbb')
